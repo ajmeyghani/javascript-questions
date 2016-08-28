@@ -27,12 +27,12 @@
 var rawInput = "id, first_name, last_name, department\n1, Tom, Jones, Engineering \n3, Kim, Thomson, Sales \n2, Jon, Doe, Engineering \n4, Paul, Doe, Sales \n";
 
 var grouped = {};
-var peopleDate = rawInput.split('\n')
+var peopleData = rawInput.split('\n')
              .filter((p, i) => p)
              .map(p => p.replace(/\s*/g, ''));
 
-var header = peopleDate[0].split(',');
-peopleDate.slice(1).forEach(p => {
+var header = peopleData[0].split(',');
+peopleData.slice(1).forEach(p => {
   var row = p.split(',');
   var person = {};
   header.forEach((h, i) => {
