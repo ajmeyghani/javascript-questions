@@ -4,9 +4,9 @@ Write a function that takes an array of numbers as an input and returns the medi
 
 To run the tests:
 
-- npm install
-- npm test
+- `npm install`
+- `npm test`
 
 If you want to watch the files and keep running the tests, you can do:
 
-`npm run tdd`
+- `npm run tdd`

@@ -6,7 +6,7 @@
 function getMedian(nums) {
   var isValidInput = nums.length && nums.every(n => typeof n === 'number');
   if (!isValidInput) {
-    return 0;
+    return NaN;
   }
   var numbers = nums.slice(0).sort((a, b) => a - b);
   var middle = Math.floor(numbers.length / 2);
