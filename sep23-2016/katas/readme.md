@@ -1,6 +1,4 @@
-# Median Calculator
-
-Write a function that takes an array of numbers as an input and returns the median.
+# JavaScript Katas
 
 To run the tests:
 

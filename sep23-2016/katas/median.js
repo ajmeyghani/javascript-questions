@@ -1,3 +1,11 @@
+/*
+Write a function that takes an array of numbers and returns
+the median. The median number is defined as follows:
+
+If there is an odd number of data values then the median will be the value in the middle. If there is an even number of data values the median is the mean of the two data values in the middle. For the data set 1, 1, 2, 5, 6, 6, 9 the median is 5. For the data set 1, 1, 2, 6, 6, 9 the median is 4.
+
+*/
+
 /**
  * Given a list of numbers, returns the median
  * @param {Array} nums array of numbers
