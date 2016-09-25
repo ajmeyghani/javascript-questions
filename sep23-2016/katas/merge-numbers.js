@@ -5,11 +5,10 @@ Write a function that merges two list with the following condition:
   Note that the final list should be sorted in desending order.
 
   For example, given the following lists:
-  list_a: [1, 5, 27, 64]
-  list_b: [2, 88, 4, 25]
+  list_a: [27, 28, 8]
+  list_b: [4, 10]
   the final list would be:
-  numbers: [1, 25, 64, 4, 25]
-  [64, 25, 4, 1]
+  numbers: [27, 8, 4]
 */
 
 function isCubic(number) {
