@@ -80,8 +80,4 @@ function validParentheses(parens){
 }
 */
 
-const isV = isValidParen('())');
-
-console.log(isV);
-
 module.exports = isValidParen;
