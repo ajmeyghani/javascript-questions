@@ -1,15 +1,14 @@
 var resp = require('./response.json');
-console.log(resp);
-var nav = {};
-function makeNav(apiResp) {
-  if (!apiResp.child_navs) {
+function makeNav(nav) {
+  if (!nav.child_navs) {
     return [];
   }
   return {
-    name: apiResp.display_name,
-    childNavs: makeNav(apiResp.child_navs)
+    name: nav.display_name,
+    url: nav.url,
+    childNavs: nav.child_navs.map(nav => makeNav(nav))
   };
 }
 
-var result = makeNav(resp);
+var result = makeNav(resp.data);
 console.log(JSON.stringify(result, null, 2));
