@@ -1,38 +1,40 @@
-var navigation = {
+module.exports = {
   name: 'Home',
   url: '/',
-  childNodes: [
+  childNavs: [
     {
-      name: 'About us',
+      name: 'About Us',
       url: '/about-us',
-      childNodes: [
+      childNavs: [
         {
           name: 'Our Company',
-          url: 'about-us/company',
-          childNodes: []
+          url: '/about-us/our-company',
+          childNavs: []
         }
       ]
     },
     {
       name: 'Contact Us',
-      url: '/contact',
-      childNodes: []
+      url: '/contact-us',
+      childNavs: []
     },
     {
       name: 'Work',
       url: '/work',
-      childNodes: [
+      childNavs: [
         {
           name: 'Marketing',
           url: '/work/marketing',
-          childNodes: []
+          childNavs: []
         },
         {
           name: 'Identity',
           url: '/work/identity',
-          childNodes: []
+          childNavs: []
         }
       ]
     }
   ]
 };
+
+

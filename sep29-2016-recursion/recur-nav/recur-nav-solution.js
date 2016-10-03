@@ -10,5 +10,4 @@ function makeNav(nav) {
   };
 }
 
-var result = makeNav(resp.data);
-console.log(JSON.stringify(result, null, 2));
+module.exports = makeNav;
