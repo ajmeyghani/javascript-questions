@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "data": {
+    "id": "1",
+    "nav_id": "1982",
+    "name": "home",
+    "display_name": "Home",
+    "url": "/",
+    "child_navs": [
+      {
+        "id": "52",
+        "nav_id": "1981",
+        "name": "about_us",
+        "display_name": "About Us",
+        "url": "/about-us",
+        "child_navs": [
+          {
+            "id": "928",
+            "nav_id": "8193",
+            "name": "our_company",
+            "display_name": "Our Company",
+            "url": "/about-us/our-company",
+            "child_navs": []
+          }
+        ]
+      },
+      {
+        "id": "9281",
+        "nav_id": "3894",
+        "name": "contact",
+        "display_name": "Contact Us",
+        "url": "/contact-us",
+        "child_navs": []
+      },
+      {
+        "id": "89041",
+        "nav_id": "2341",
+        "name": "work",
+        "display_name": "Work",
+        "url": "/work",
+        "child_navs": [
+          {
+            "id": "12",
+            "nav_id": "51",
+            "name": "marketing",
+            "display_name": "Marketing",
+            "url": "/work/marketing",
+            "child_navs": []
+          },
+          {
+            "id": "1266",
+            "nav_id": "512",
+            "name": "identity",
+            "display_name": "Identity",
+            "url": "/work/identity",
+            "child_navs": []
+          }
+        ]
+      }
+
+    ]
+  }
+}
