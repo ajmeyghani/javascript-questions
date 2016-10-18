@@ -13,5 +13,5 @@ module.exports = function luhn(n) {
     return n;
   })
   .reduce((s, val) => s + val) % 10;
-  return mod10Result ? false:true;
+  return !mod10Result;
 };
