@@ -1,17 +1,14 @@
 module.exports = function luhn(n) {
-  const nums = String(n).split('').reverse().map(str => Number(str));
-  var mod10Result = nums.map((n, idx) => {
-    if (idx % 2 !== 0) {
-      return n * 2;
-    }
-    return n;
-  })
-  .map(n => {
-    if (n > 9) {
-      return Math.abs(n - 9);
-    }
-    return n;
-  })
-  .reduce((s, val) => s + val) % 10;
-  return !mod10Result;
+  return [...String(n)].reverse().map(str => Number(str))
+  .map((n, idx) => idx % 2 !== 0 ? n * 2 : n)
+  .map(n => n > 9 ? Math.abs(n - 9) : n)
+  .reduce((s, val) => s + val) % 10 === 0;
 };
+
+/*
+// one liner
+function validate(n){
+  return (n+"").split('').map((x,ind)=>((n+"").length+ind)%2==0?2*x:x).map(x=>(x>9)?x-9:x).reduce((a,b)=>parseInt(a)+parseInt(b))%10 == 0;
+}
+*/
+
