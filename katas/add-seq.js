@@ -39,7 +39,6 @@ module.exports = function sumConsecutives(nums) {
   return result;
 };
 
-
 /*
 // other solutions
 // 1)
@@ -68,7 +67,6 @@ function sumConsecutives(s) {
 // 3
 var sumConsecutives = s=> s.reduce( (p,c,i,s) => (c == s[i-1] ? p[p.length-1]+=c : p.push(c), p), [])
 
-
 // 4
 function sumConsecutives(s) {
     var results=[];
@@ -96,6 +94,19 @@ function sumConsecutives(s) {
     }
   });
   return res;
+}
+
+//6
+function sumConsecutives(nums) {
+  var output = [];
+  for (var i = 0, len = nums.length; i < len; i++) {
+    if (nums[i] === nums[i - 1]) {
+      output[output.length - 1] += nums[i];
+    } else {
+      output.push(nums[i]);
+    }
+  }
+  return output;
 }
 
 */
