@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "data": [
+    {
+      "id": 23425,
+      "user": 5,
+      "title": "hello there",
+      "content": "this is the best post"
+    },
+    {
+      "id": 234251,
+      "user": 5,
+      "title": "My second post",
+      "content": "This is again the best title in the world"
+    },
+    {
+      "id": 2241516,
+      "user": 6,
+      "title": "My best post",
+      "content": "I will fill this out later"
+    },
+  ]
+}

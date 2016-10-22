@@ -39,4 +39,12 @@ function findNb(m) {
   return m === 0 ? i : -1;
 }
 
+/*
+// 1)
+function findNb(m) {
+  var value = (((1 + Math.sqrt(1 + 8 * Math.sqrt(m))) / 2) - 1);
+  return Number.isInteger(value) ? value : -1;
+}
+*/
+
 module.exports = findNb;
