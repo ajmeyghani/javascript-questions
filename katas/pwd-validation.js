@@ -25,3 +25,17 @@ module.exports = function validate(password) {
   // return /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[a-zA-Z0-9]{6,}$/.test(password);
 
 }
+
+
+
+/*
+function validate(password) {
+console.log(password);
+      return password.length>=6 &&
+        /[a-z]/.test(password) &&
+        /[A-Z]/.test(password) &&
+        /[0-9]/.test(password) &&
+        /^[a-zA-Z0-9]+$/.test(password);
+
+      }
+ */
